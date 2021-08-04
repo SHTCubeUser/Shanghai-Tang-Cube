@@ -1,2 +1,0 @@
-# Integration
-Data extraction process
