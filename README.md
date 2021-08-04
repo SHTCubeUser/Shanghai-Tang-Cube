@@ -1,2 +1,2 @@
 # Integration
-Data extraction process
+This folder contains the Integration Services Project
