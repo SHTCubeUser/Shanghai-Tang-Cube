@@ -1,0 +1,246 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4270bc25-d526-41d0-b544-2ca2c61e72ab" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Ranking by all markets Unit</ID>
+  <Name>Ranking by all markets Unit</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4557" scrolltop="-9247" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12197" y="22066" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="v_ByQty_Ranking" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3043" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e30b0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_v_ByQty_Ranking" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4557</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-9247</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4f505a5b-9cf4-4f37-8c86-be5f32613eea">
+    <DataSourceViewID>Is21olap</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="4dbbda88-d103-4593-b810-173ca6525e7f">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0645c713-3e18-452b-9287-dcc59d7f1d57">
+      <ID>Yr Mth Loc Key</ID>
+      <Name>Yr Mth Loc Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="51e79d38-5a45-426c-b200-efb8f44d2c51">
+          <DataType>WChar</DataType>
+          <DataSize>279</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c0d378e-0c03-40b5-a6fa-37ec4ff04593">
+            <TableID>dbo_v_ByQty_Ranking</TableID>
+            <ColumnID>YrMthLoc_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="db1b6be2-7879-4746-adf6-6d3de1588102">
+          <AttributeID>Yr</AttributeID>
+          <Name>Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f8414cf1-e008-4dd1-b8cd-1ae2cc9a2225">
+          <AttributeID>Mth</AttributeID>
+          <Name>Month</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="01a0a92a-cfb7-435a-a950-b11ae01cfc60">
+          <AttributeID>BI Loc</AttributeID>
+          <Name>BI Loc</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4d9fd71e-98d6-4946-a461-efe7543102d1">
+          <AttributeID>Qty</AttributeID>
+          <Name>Quantity all markets</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5a3c6990-3740-470d-8ca9-b5c3d273bfda">
+          <AttributeID>Rank</AttributeID>
+          <Name>Ranking by all markets Unit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4b9b177e-503e-4b54-bbb0-b25de3b6a5f9">
+          <AttributeID>Location Id</AttributeID>
+          <Name>Location Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5b9f3b94-3259-486f-8f7e-0eb505646257">
+          <AttributeID>Count Ky</AttributeID>
+          <Name>Count Ky</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="02564e0a-f2cb-4fc1-b673-9781639cd1ba">
+      <ID>Yr</ID>
+      <Name>Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5152b93a-fb89-4b2b-8bf4-f9815ba30dda">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="39d2f769-6f0f-4f9e-95b7-bd9bbf1f8001">
+            <TableID>dbo_v_ByQty_Ranking</TableID>
+            <ColumnID>Yr</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="89bcda95-4cbb-431e-a152-f4fea71cb3f8">
+      <ID>Mth</ID>
+      <Name>Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e26d5615-dc89-417a-881b-df6184844365">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0567e35e-45f6-4cef-ad3d-3ab0e6278419">
+            <TableID>dbo_v_ByQty_Ranking</TableID>
+            <ColumnID>Mth</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="32ddd0d5-3792-4864-9f26-c3c81b093779">
+      <ID>BI Loc</ID>
+      <Name>BI Loc</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9f8bc2b5-264e-463a-a8ec-41bac3cfff27">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8864dc2b-3959-4957-a0c7-a5491429bd60">
+            <TableID>dbo_v_ByQty_Ranking</TableID>
+            <ColumnID>BI_Loc</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="44ed1353-a9f7-4acb-8d0d-5cd65ec92e41">
+      <ID>Qty</ID>
+      <Name>Quantity all markets</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="05a906e2-ae95-4985-9d45-f48f045e00c6">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e0e4561d-bc28-4ee6-970b-ce7c0b19505c">
+            <TableID>dbo_v_ByQty_Ranking</TableID>
+            <ColumnID>qty</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="68bf6317-3d1a-419d-99ca-e8720f595148">
+      <ID>Rank</ID>
+      <Name>Ranking by all markets Unit</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e1a10a5c-81f3-4f30-b5ea-6252acfc8944">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="82dc78b4-fc3c-4a98-b8a8-c19506d4c340">
+            <TableID>dbo_v_ByQty_Ranking</TableID>
+            <ColumnID>Rank</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c3c9d2fd-3f38-4094-aa2a-7017ab3cc8e5">
+      <ID>Location Id</ID>
+      <Name>Location Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9c69db4b-a9be-470b-b56a-665def134e1f">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b0ace8c-e2a3-4f7c-8c8b-e9ceb8a52bba">
+            <TableID>dbo_v_ByQty_Ranking</TableID>
+            <ColumnID>location_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="48c2ed97-db67-4c81-b551-299d2b1202b3">
+      <ID>Count Ky</ID>
+      <Name>Count Ky</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2e34ce09-9f7f-4c03-8b3f-7c5dfb299097">
+          <DataType>WChar</DataType>
+          <DataSize>279</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e0a31af-67c2-4b81-a276-da8d2b72909b">
+            <TableID>dbo_v_ByQty_Ranking</TableID>
+            <ColumnID>count_ky</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

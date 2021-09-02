@@ -1,0 +1,173 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SHT_BI_DSR_WIP</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>aXd8eUy2RxTmP1AmWAwRuwZP58U=5/20/2021 9:52:54 AM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Is21olap</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>OC5l87pQa6ukKOjQLG0QyieVTZA=8/31/2021 6:22:29 PM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Is21olap</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8uusfUgaY97sBU46nmdwJs+7mDg=6/4/2021 5:51:26 PM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Tx Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XQT5AIDi6PgXojRZB+0PF1tv/yI=7/29/2021 2:41:12 PM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>qR3cgQpXGzN9coCR4yYulsgNCyk=7/30/2021 11:52:40 AM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Items</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tsnIWxKwM5PBGpf5WfAvK+V94yg=5/21/2021 11:22:22 AM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Document Number</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>67q0VeZGJ/9NTcx4YFr9guHjdDI=6/23/2021 9:37:40 PM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Transaction Lines</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MeN16MrC1MLSLjkoo1xySWTAxPg=6/23/2021 9:37:42 PM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Transactions</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>I8d2ehhxwQuog8+xqnoWdtIjfZ4=8/3/2021 2:01:20 PM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Location Sales</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BQBk5Beth3ft9mzrZeZbNK+pq8I=8/3/2021 10:49:44 AM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Inventory Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BGIxjmLzFpV/b5lw6Uhkcbu9xvo=8/11/2021 11:39:34 AM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Ranking by Market Unit</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NErj6SsKlbYlpgyNN6kEj78JG1Q=8/11/2021 11:40:04 AM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Ranking by Market Tx</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6B4BHabfc2NhT1FD2bJQiBS8oq4=8/11/2021 12:03:19 PM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Ranking by all markets Unit</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>kPRm4DBq91Fqw4LY14wQtj5t/1Y=8/11/2021 11:40:04 AM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Ranking by all markets Tx</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>VMTaO+kp6cMe0rLdqyqrbqblO5Y=8/11/2021 10:22:21 AM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Inventory Rolling 3 and 6 Months</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ichUW7emIrinXtckvgXDdkiatyY=8/11/2021 1:00:04 PM8/11/2021 12:31:37 PM</TimeStamp>
+        <ID>
+          <String>Visitor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>HeBVB/VUnOm1g5mBe28xXt9wfsI=8/11/2021 6:17:00 PM8/6/2021 4:49:32 PMNbfnIzCNiSBXPRFSpN6FDFaVKSw=8/11/2021 5:57:39 PM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>DSR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>1myYxuOkQYacxgNJDzJ9poy1G+U=8/4/2021 10:50:30 AM8/6/2021 4:49:32 PMRzx4flxLe0ahDfcsVSS0NswKr1c=7/5/2021 5:38:52 PM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Inventory</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>RBfv0RJXQEsDwHuUuRGonXBJGxk=8/11/2021 1:31:17 PM8/6/2021 4:49:32 PMjFKteS1+mDrwZfnZ2KG3HNQSLnE=8/11/2021 12:47:58 PM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>SalesRanking</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>DsFkWPBRhukFbvwmOJZd0hCFIz8=8/3/2021 11:48:58 AM8/6/2021 4:49:32 PM</TimeStamp>
+        <ID>
+          <String>Role</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>9s0xuX68+sSlb9TvjDtK7CKHRZw=8/3/2021 11:48:58 AM8/6/2021 4:49:32 PM</TimeStamp>
+      <ID>
+        <String>SHT_BI_DSR_WIP</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2021-08-31T15:07:09.333333Z</LastDeployed>
+</DeploymentSnapshot>

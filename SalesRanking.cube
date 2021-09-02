@@ -1,0 +1,851 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6c87ce95-6e71-4362-adb4-e0a9b9916e7e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SalesRanking</ID>
+  <Name>SalesRanking</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="33" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5386" scrolltop="5725" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="35586" y="22066" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="v_ByCountry_ByQty_Ranking" left="5443" top="14549" logicalid="10" controlid="1" masterid="0" hint1="0" hint2="0" width="3043" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e30b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_v_ByCountry_ByQty_Ranking" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="v_ByTx_Ranking" left="0" top="20944" logicalid="11" controlid="2" masterid="0" hint1="0" hint2="0" width="3043" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e30b0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_v_ByTx_Ranking" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="v_ByQty_Ranking" left="21772" top="20944" logicalid="12" controlid="3" masterid="0" hint1="0" hint2="0" width="3043" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e30b0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_v_ByQty_Ranking" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="SalesRank" left="10886" top="17535" logicalid="13" controlid="4" masterid="0" hint1="0" hint2="0" width="3043" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e30b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_SalesRank" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="v_ByCountry_ByTx_Ranking" left="16329" top="14549" logicalid="14" controlid="5" masterid="0" hint1="0" hint2="0" width="3043" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e30b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_v_ByCountry_ByTx_Ranking" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8186" top="16147" logicalid="15" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2585" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesRank-v_ByCountry_ByQty_Ranking]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="17" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8486" y="16546" />
+              <point x="9686" y="16546" />
+              <point x="9686" y="18432" />
+              <point x="10886" y="18432" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2743" top="19782" logicalid="16" controlid="7" masterid="0" hint1="0" hint2="0" width="8443" height="3348" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesInfo-v_ByTx_Ranking]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="17" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3043" y="22730" />
+              <point x="6964" y="22730" />
+              <point x="6964" y="20082" />
+              <point x="10886" y="20082" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13629" top="19782" logicalid="17" controlid="8" masterid="0" hint1="0" hint2="0" width="8443" height="3348" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesInfo-v_ByQty_Ranking]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="16" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="21772" y="22730" />
+              <point x="17851" y="22730" />
+              <point x="17851" y="20082" />
+              <point x="13929" y="20082" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13629" top="16147" logicalid="18" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="2585" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesInfo-v_ByCountry_ByTx_Ranking]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="4" sourceattachpoint="16" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16329" y="16546" />
+              <point x="15129" y="16546" />
+              <point x="15129" y="18432" />
+              <point x="13929" y="18432" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Monthly_Traffic_Count" left="10907" top="9000" logicalid="23" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Monthly_Traffic_Count" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12008" top="11650" logicalid="24" controlid="15" masterid="0" hint1="0" hint2="0" width="799" height="6185" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesRank-Monthly_Traffic_Count]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="14" destid="4" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12407" y="12149" />
+              <point x="12407" y="17535" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6664" top="11650" logicalid="25" controlid="16" masterid="0" hint1="0" hint2="0" width="5043" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[v_ByCountry_ByQty_Ranking-Monthly_Traffic_Count]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="14" destid="1" sourceattachpoint="1" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11307" y="12149" />
+              <point x="11307" y="13349" />
+              <point x="6964" y="13349" />
+              <point x="6964" y="14549" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12558" top="11650" logicalid="26" controlid="17" masterid="0" hint1="0" hint2="0" width="5592" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[v_ByCountry_ByTx_Ranking-Monthly_Traffic_Count]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="14" destid="5" sourceattachpoint="7" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12957" y="12149" />
+              <point x="12957" y="13349" />
+              <point x="17850" y="13349" />
+              <point x="17850" y="14549" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13108" top="11650" logicalid="27" controlid="18" masterid="0" hint1="0" hint2="0" width="10485" height="9594" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[v_ByQty_Ranking-Monthly_Traffic_Count]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="14" destid="3" sourceattachpoint="9" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13507" y="12149" />
+              <point x="13507" y="16546" />
+              <point x="23293" y="16546" />
+              <point x="23293" y="20944" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1221" top="11650" logicalid="28" controlid="19" masterid="0" hint1="0" hint2="0" width="11036" height="9594" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[v_ByTx_Ranking-Monthly_Traffic_Count]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="14" destid="2" sourceattachpoint="3" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11857" y="12149" />
+              <point x="11857" y="16546" />
+              <point x="1521" y="16546" />
+              <point x="1521" y="20944" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Locations" left="3701" top="20725" logicalid="29" controlid="20" masterid="0" hint1="0" hint2="0" width="6059" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ab17000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Locations" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9460" top="20626" logicalid="30" controlid="21" masterid="0" hint1="0" hint2="0" width="1726" height="856" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesRank-Locations]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="20" destid="4" sourceattachpoint="23" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9760" y="21025" />
+              <point x="10323" y="21025" />
+              <point x="10323" y="21182" />
+              <point x="10886" y="21182" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="LocMapping" left="9614" top="13595" logicalid="31" controlid="22" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_LocMapping" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9081" top="16444" logicalid="32" controlid="23" masterid="0" hint1="0" hint2="0" width="1233" height="4781" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Locations-LocMapping]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="20" destid="22" sourceattachpoint="20" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9480" y="20725" />
+              <point x="9480" y="18735" />
+              <point x="10014" y="18735" />
+              <point x="10014" y="16744" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5386</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>5725</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>9000</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="7ffd7339-a20b-45b7-846a-6d6c3fcb5758">
+      <ID>Ranking by Market Unit</ID>
+      <Name>Ranking by Market Unit</Name>
+      <DimensionID>Ranking by Market Unit</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="da87a30f-4e4d-47d3-afa9-210c8db61baa">
+          <AttributeID>Yr Mth Loc Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8efb2187-aee0-4789-bd82-56914b741e12">
+          <AttributeID>Rank</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9fef27ad-0589-44cb-af2a-de16da7c4081">
+          <AttributeID>BI Loc</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bed49a2a-803d-402c-a80e-7ad6e3a92822">
+          <AttributeID>Yr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="77620b7d-7b15-4fc9-bf51-5d15da3ea3d0">
+          <AttributeID>Mth</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="60247625-c825-4b6a-84a9-33c7c355ccb9">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f6d6efb2-c2b3-46fc-8b91-683ef5d93f5f">
+          <AttributeID>Qty</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d1a9f239-4b52-4ff9-b043-5540c5a8b529">
+          <AttributeID>Location Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cc539433-4e8e-4119-9ba9-269d78a84384">
+          <AttributeID>Count Ky</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1747833c-59a5-45e1-a9c1-f62227260b66">
+      <ID>Ranking by Market Tx</ID>
+      <Name>Ranking by Market Tx</Name>
+      <DimensionID>Ranking by Market Tx</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="77514eb7-daff-4bf7-b016-f03ee7c1cda9">
+          <AttributeID>Yr Mth Loc Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bd681aae-2093-4593-8fe1-9c2d4b780610">
+          <AttributeID>Yr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3bf70aec-01c3-4e13-b535-6c059ea47900">
+          <AttributeID>Mth</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fd623238-35f9-4c2d-a895-ee4cc3d4dd0f">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="53441921-0a5a-4693-a75a-806a3a3b6baf">
+          <AttributeID>BI Loc</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="682c52ee-ef85-4373-b65d-47d2fd44d3c9">
+          <AttributeID>Rank</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d686487d-7ccc-408f-9fab-d5b509531bfd">
+          <AttributeID>Cust Per Tx</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="78af61ef-69a0-42d4-8cae-00522411410c">
+          <AttributeID>Location Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3f38d7fc-ddf5-4d41-a662-c6c3bb3fbe5f">
+          <AttributeID>Count Ky</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2e5bb855-4caa-43ef-9d5f-508ee333586f">
+      <ID>Ranking by all markets Unit</ID>
+      <Name>Ranking by all markets Unit</Name>
+      <DimensionID>Ranking by all markets Unit</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="032ca527-9b6d-4bd3-92db-df24331ab682">
+          <AttributeID>Yr Mth Loc Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c7605baa-c38a-4878-b832-fa85234b9ab4">
+          <AttributeID>Yr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dbabd9e3-1122-4aba-9c8a-cf53deafd617">
+          <AttributeID>Mth</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="000befd4-cae3-4e77-90ad-a048ba5f20e1">
+          <AttributeID>BI Loc</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b598c9ed-ec0e-4dd2-90ea-f95cb421a5ba">
+          <AttributeID>Qty</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b35856a1-91e7-48f5-aeb4-422eb64ca385">
+          <AttributeID>Rank</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d32431ba-69cc-4ea2-982f-4a5727f8a689">
+          <AttributeID>Location Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a4b0d9a8-d06b-472f-84bc-8ef721ebc010">
+          <AttributeID>Count Ky</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1712d67e-e2c1-40dd-b279-a89af319a88d">
+      <ID>Ranking by all markets Tx</ID>
+      <Name>Ranking by all markets Tx</Name>
+      <DimensionID>Ranking by all markets Tx</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="861efaec-5dd0-4316-990e-269d88369323">
+          <AttributeID>Yr Mth Loc Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b5580d8e-3699-433b-a48a-57fd59fcceec">
+          <AttributeID>Yr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="086c16b9-e4ad-4043-a6eb-9e0f45eaf36d">
+          <AttributeID>Mth</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b053432-c649-4b9f-a2f8-0519f27af3d4">
+          <AttributeID>BI Loc</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dd51ecd0-6484-40fe-af6f-e1eb824980ed">
+          <AttributeID>Cust Per Tx</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="38005880-239e-4bc0-8b65-bed7c7e1bcc5">
+          <AttributeID>Rank</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f6fb1cbf-3e78-460c-bc1e-27a411cd96ed">
+          <AttributeID>Location Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c8764ff2-909b-473f-84e5-5685750b4204">
+          <AttributeID>Count Ky</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9dd95e0e-1e0e-4f90-a545-d836096d3c36">
+      <ID>Ranking by Visitor</ID>
+      <Name>Ranking by Visitor</Name>
+      <DimensionID>Visitor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6604cf4a-f5a8-4676-8aa6-b0d30ae5afd2">
+          <AttributeID>Count Ky</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5f4dea89-9386-42d9-a1f7-c8df9821c08f">
+          <AttributeID>Yr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a11e8a23-9842-4764-9a6e-1808360f64d4">
+          <AttributeID>Mth</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="53406f7f-add4-4a4c-addd-1a90a885ad0c">
+          <AttributeID>Location Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="91687a80-93a4-4fe9-9f53-0df18f639900">
+          <AttributeID>Visitor</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8cdd914d-d490-4ec7-a990-1f39c474c18d">
+          <AttributeID>Yr Mth Location</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <CubePermissions>
+    <CubePermission dwd:design-time-name="376472a6-ea61-4dd8-bc5d-a95134d5fc8b">
+      <ID>CubePermission</ID>
+      <Name>CubePermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Read>Allowed</Read>
+      <Write>Allowed</Write>
+      <ReadSourceData>Allowed</ReadSourceData>
+    </CubePermission>
+  </CubePermissions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="1977cfad-0ab0-42ec-b444-e4a0202b1586">
+      <ID>Sales Rank</ID>
+      <Name>Sales Rank</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="2a9095ac-a7e5-4527-a4d9-8883226c10e1">
+          <ID>Qty</ID>
+          <Name>Qty</Name>
+          <Source dwd:design-time-name="7442b9b8-8db7-4705-9bdf-095eea7d87f4">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a557ecef-2e14-4e7d-871f-fa791706e12b">
+              <TableID>dbo_SalesRank</TableID>
+              <ColumnID>qty</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5d1d13f2-d798-434d-926c-e1fce0732923">
+          <ID>Local Amount</ID>
+          <Name>Local Amount</Name>
+          <Source dwd:design-time-name="a4beff49-83ae-411e-95a6-eb91eb82ab19">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0d5fc3f1-6d89-4674-a6e9-b2ea1523196f">
+              <TableID>dbo_SalesRank</TableID>
+              <ColumnID>local_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2bc8e703-462d-47bc-a1ac-d1efc5a48ded">
+          <ID>Us Amount</ID>
+          <Name>Us Amount</Name>
+          <Source dwd:design-time-name="400b14b8-908e-47cd-95d6-2444f69aab45">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="473c20eb-2b66-4193-8c67-df861339ab31">
+              <TableID>dbo_SalesRank</TableID>
+              <ColumnID>us_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="170dd4e6-5fc0-4a8b-99df-da2c9c3c8e6a">
+          <ID>Qty - Sales Rank</ID>
+          <Name>Ranking Qty</Name>
+          <AggregateFunction>None</AggregateFunction>
+          <Source dwd:design-time-name="737a284c-7086-4c37-9b0c-12bc2415408f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="90d78e67-3287-49f5-bc73-ec66bbc0a857">
+              <TableID>dbo_SalesRank</TableID>
+              <ColumnID>qty</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3ddc20d0-7e6c-4ffb-a76e-92017b64d470">
+          <ID>Targetamt</ID>
+          <Name>taramt</Name>
+          <Source dwd:design-time-name="5a773367-fbf9-46ca-adcb-84e387423f75">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8782cb3b-7c59-442a-8fdc-7a5d82258d76">
+              <TableID>dbo_SalesRank</TableID>
+              <ColumnID>targetamt</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5da06f71-e2f4-4f8c-a834-7a70defa54c3">
+          <CubeDimensionID>Ranking by Market Unit</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f6dfb3e5-c49f-4b33-a697-2510d9ef6bac">
+              <AttributeID>Yr Mth Loc Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7d542688-4207-4af0-bb81-d7ce5ace7b34">
+                  <DataType>WChar</DataType>
+                  <DataSize>279</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2f4ee2bf-7593-42d4-82ff-9c319b8bbe42">
+                    <TableID>dbo_SalesRank</TableID>
+                    <ColumnID>YrMthLoc_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ed2a47ec-994a-4477-be54-db7713195491">
+          <CubeDimensionID>Ranking by Market Tx</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ae77f6fb-e196-4061-b871-b767d574d12f">
+              <AttributeID>Yr Mth Loc Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="52d90949-4088-4e77-addb-36f9f2aa1295">
+                  <DataType>WChar</DataType>
+                  <DataSize>279</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8cf8805f-84fb-46b8-ae06-d8e3457d2e68">
+                    <TableID>dbo_SalesRank</TableID>
+                    <ColumnID>YrMthLoc_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ac01a210-0e93-428c-9dc0-084b5b033312">
+          <CubeDimensionID>Ranking by all markets Unit</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="274f6792-09d8-419d-ba80-5c707e5dfa29">
+              <AttributeID>Yr Mth Loc Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9cb481c2-58b2-4c47-837b-a36bbc6aae98">
+                  <DataType>WChar</DataType>
+                  <DataSize>279</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c6c46522-fcdc-4632-9d2b-f249cf81e400">
+                    <TableID>dbo_SalesRank</TableID>
+                    <ColumnID>YrMthLoc_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6ef206c0-25d7-4d4c-8ddd-5351ac65daa7">
+          <CubeDimensionID>Ranking by all markets Tx</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6067c3aa-10d4-465b-944c-fe00a8e2a7d3">
+              <AttributeID>Yr Mth Loc Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8199e7d3-3d2e-4b9b-bd8b-21ad9837ef06">
+                  <DataType>WChar</DataType>
+                  <DataSize>279</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fc54575d-9182-444f-b595-bf5f8e70e094">
+                    <TableID>dbo_SalesRank</TableID>
+                    <ColumnID>YrMthLoc_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ba91991c-a25f-40e1-bd2f-a7a1457b4e02">
+          <CubeDimensionID>Ranking by Visitor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="469ba9ce-29cc-4917-b378-5cd1071855a5">
+              <AttributeID>Yr Mth Location</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7681a4a3-788b-4f27-9e1d-ea6dff9ccb57">
+                  <DataType>WChar</DataType>
+                  <DataSize>47</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="aeadb542-8753-439f-a034-c10142ff230b">
+                    <TableID>dbo_SalesRank</TableID>
+                    <ColumnID>YrMthLoc_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="74fb3b4c-0c77-44e5-8ee8-be7839f05b95">
+      <ID>Monthly Traffic Count</ID>
+      <Name>Monthly Traffic Count</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="42bad305-7423-4984-bfd7-3e2a13400589">
+          <ID>Visitor</ID>
+          <Name>Visitor</Name>
+          <Source dwd:design-time-name="b4333123-e925-4876-af17-cd426d794ca7">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="714cf180-6787-432a-b2e5-8603e7ac6a9a">
+              <TableID>dbo_Monthly_Traffic_Count</TableID>
+              <ColumnID>visitor</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="94207b07-52c8-4bb3-8c64-9a90fabc7abc">
+          <CubeDimensionID>Ranking by all markets Tx</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e430d41c-0eff-4720-9ba8-d745ab0444b1">
+              <AttributeID>Count Ky</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7af734c6-41ac-4c47-9429-2aa3992a2298">
+                  <DataType>WChar</DataType>
+                  <DataSize>279</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="200739b5-6a53-4065-ab5d-bf2c3747084c">
+                    <TableID>dbo_Monthly_Traffic_Count</TableID>
+                    <ColumnID>count_ky</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ca3f0614-a833-4547-8e2c-7f9b4933fa0b">
+          <CubeDimensionID>Ranking by all markets Unit</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a48f21ab-4689-4f44-b34d-328db566bd82">
+              <AttributeID>Count Ky</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c9f3c2f7-a916-4b2b-aca7-305edb4ea8c8">
+                  <DataType>WChar</DataType>
+                  <DataSize>279</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f65fbc9f-6ede-41e8-b645-0638834ef8b0">
+                    <TableID>dbo_Monthly_Traffic_Count</TableID>
+                    <ColumnID>count_ky</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b27a746c-4c5b-4583-83ef-e1e04fac8c58">
+          <CubeDimensionID>Ranking by Market Tx</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dc784f7b-b1f4-4e00-aaf7-dffc506a3e57">
+              <AttributeID>Count Ky</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1c962f42-7e39-4410-a08d-9c11dc6f4d02">
+                  <DataType>WChar</DataType>
+                  <DataSize>279</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="31c331a7-9dc2-424d-9f32-d3f05b0e8641">
+                    <TableID>dbo_Monthly_Traffic_Count</TableID>
+                    <ColumnID>count_ky</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b733ef65-b22c-47e4-a3b4-39339682c458">
+          <CubeDimensionID>Ranking by Market Unit</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="46c6c4ee-cce9-42fb-8500-05ed4cd208ef">
+              <AttributeID>Count Ky</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9bdbdfb9-0538-48a5-9741-a1dd53e40ee0">
+                  <DataType>WChar</DataType>
+                  <DataSize>279</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a2683e1f-f468-495e-a300-010ee5a27030">
+                    <TableID>dbo_Monthly_Traffic_Count</TableID>
+                    <ColumnID>count_ky</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="cbf9f10e-7b7d-43bd-bf33-ad56c39e8231">
+          <CubeDimensionID>Ranking by Visitor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="89a4a50e-dcb6-4f82-b86b-1d83f736f481">
+              <AttributeID>Count Ky</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1bed4a80-ed44-4323-b7d6-684d32da0167">
+                  <DataType>WChar</DataType>
+                  <DataSize>47</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="74562c06-b8d3-49fc-9074-8589ba663cec">
+                    <TableID>dbo_Monthly_Traffic_Count</TableID>
+                    <ColumnID>count_ky</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="49e3fd46-5e54-43f8-a480-e1192f531cbb">
+    <DataSourceViewID>Is21olap</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="c82f8f1f-c3ae-4a30-b731-68c65db09982">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Target]
+ AS taramt, 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Targets'  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>
