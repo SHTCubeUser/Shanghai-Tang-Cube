@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/10/2019 3:49:31 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="IBM3650NPOS"
+  DTS:CreatorName="IZONEINDONUSA\infoware"
+  DTS:DTSID="{0F04A997-C73C-41BD-9A3C-8DD024B66956}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.166"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Restore Sales Cube"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{A2A9031B-0AB7-4014-8C96-C46292D678EC}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Production]"
+      DTS:CreationName="MSOLAP100"
+      DTS:DTSID="{151A72DF-E26F-4394-8CE8-B39E9C54D8C8}"
+      DTS:ObjectName="Production">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Data Source=(local);Initial Catalog=SHT_BI_AS;Provider=MSOLAP.6;Integrated Security=SSPI;Impersonation Level=Impersonate;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Restore Sales Cube"
+      DTS:CreationName="Microsoft.ASExecuteDDLTask"
+      DTS:Description="Analysis Services Execute DDL Task"
+      DTS:DTSID="{F4B6BFAE-35B5-4829-A54D-098585DEA097}"
+      DTS:ExecutableType="Microsoft.ASExecuteDDLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Restore Sales Cube"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ASDdlData
+          ConnectionName="Production"
+          SourceType="DirectInput"
+          Source="&lt;Restore xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;File&gt;C:\IS21BI\DB Backup\SHT_BI_DSR_WIP.abf&lt;/File&gt;&#xA;  &lt;DatabaseName&gt;SHT_BI_AS&lt;/DatabaseName&gt;&#xA;  &lt;AllowOverwrite&gt;true&lt;/AllowOverwrite&gt;&#xA;&lt;/Restore&gt;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Restore Sales Cube"
+          TopLeft="45,62" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[Production]">
+    <ProjectReferenceName></ProjectReferenceName>
+  </ConnectionManager>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
