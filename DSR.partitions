@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="30e39d20-75d2-45d8-a6db-1de1fb61f869" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DSR</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Sales Info</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1f52bf1b-c753-4ab7-a4a4-c80f77883fda">
+          <ID>Sales Info</ID>
+          <Name>Sales Info</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f6f101af-9bfc-42c8-a94e-7ac7f7d74527">
+            <DataSourceViewID>Is21olap</DataSourceViewID>
+            <TableID>dbo_SalesInfo</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sales Info 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f1f5a500-1376-4334-8ca6-4f88aacf3bfe">
+          <ID>Sales Info</ID>
+          <Name>Sales Info</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2b44eae1-c80e-4ca7-87ca-bd9afe34f855">
+            <DataSourceViewID>Is21olap</DataSourceViewID>
+            <TableID>dbo_SalesInfo</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sales Info 2</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8fb97650-eac3-4bf2-87f7-a82b2bf1ac55">
+          <ID>Sales Info</ID>
+          <Name>Sales Info</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6c30f0ca-48b7-45ec-b03d-016996cfa459">
+            <DataSourceViewID>Is21olap</DataSourceViewID>
+            <TableID>dbo_SalesInfo</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Traffic Count</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="354dbe53-7299-4b36-af67-1401f13422ff">
+          <ID>Traffic Count</ID>
+          <Name>Traffic Count</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a91d3d71-8986-45cd-92fe-bcb0ae634fe9">
+            <DataSourceViewID>Is21olap</DataSourceViewID>
+            <TableID>dbo_Traffic_Count</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
