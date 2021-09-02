@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Cube Regeneration", "Cube Regeneration.dtproj", "{AD394107-65B4-4477-B8B9-4C4C53994843}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD394107-65B4-4477-B8B9-4C4C53994843}.Development|Default.ActiveCfg = Development
+		{AD394107-65B4-4477-B8B9-4C4C53994843}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6198F1FA-9510-4B7C-96CE-2508412787BA}
+	EndGlobalSection
+EndGlobal
