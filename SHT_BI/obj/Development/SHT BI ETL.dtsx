@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="168"
-  DTS:VersionGUID="{2FF80EC4-FA06-46E6-BADE-D22F79A8C966}">
+  DTS:VersionBuild="172"
+  DTS:VersionGUID="{867BD3F4-9CD4-4B69-AC9C-3D1BD901E4EC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAH/OOpYJyIEml7mclYIR0oQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAPVDxeIPMtH+3AhU6ZecE5cE6awjkcKfiW1Q5LQSvRhQAAAAAOgAAAAAIAACAAAACH8BYgIzRmcZzrYH7vAue1/GETyub4DhJj8iqs5rI4jyAAAABqzPxrb/TStQYVljwfwJujL5V1/zRiKQx18a0zq6LL3kAAAABphYVD56KjWzUJX82WpBCwZpt8ybDVo8vbeL7x8NOx/WT5M5Gm8q38prxC3Jz8vKUalAHfQYLUF6o0Lbf4FXrP</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAH/OOpYJyIEml7mclYIR0oQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACIGvdnSwgIBDxtIh/MgaECpElBQGCbMCdbJsKaj8EQbQAAAAAOgAAAAAIAACAAAAAaUPpTA1g7tjhTQh3KGuZ2ZlEP5s4ZDWsxLUMxc9xCbSAAAAB9irBtv5l9X+jsaXSvQY6QdY5cUxBl3787ezOBAp5ffUAAAADBuMLL7Tbp4F6ubct0FuDzYUJXDOSxLEbELej1t198qRPX/ZwchF8k9NWGM1tFIEyjPhB2PgiHxOhTQTznu2BN</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -44,7 +44,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAH/OOpYJyIEml7mclYIR0oQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAlrKXDKHCaaSEYSGcS1HS6lxuAHE4EWIRGbcRP75bXAAAAAAAOgAAAAAIAACAAAAC/E94YtrbZEw9HzA3zgDHX4zZkx1cp2GKkMeQ3Pmde/iAAAACAHBn1dRCVpZTtjsZQPqg5qfDWkjHsDCAzEKbpJ3L2j0AAAADbiaBPLMk5QpUXPufvdwrX+ADGDcrVORt4ofdsbWLVZECTjp+wuDacWZmif8Ow4W7S4tFWaOSjf/jbIjvLDOtL</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAH/OOpYJyIEml7mclYIR0oQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABHzEQqNNjpfXfuOmswARrxrNM4y7oxfAbpgmyCn0CTGwAAAAAOgAAAAAIAACAAAACINia8B4QSwBh7Akw1btIv3c7E3zRP2J4s6hzjHVnpwyAAAACPFgUofAV915ytwdz5Yc5qUL+7ihIhO/28V1aUdetJUUAAAADjANJyDdIe0saXQeeLRfUx4EV07+DnHS00vReujVwHTgUZMLzn54mFnqKNRrCTp3IpY8fsijnzwmJuOcoOq6ha</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -60,7 +60,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Create Yearly and Monthly opening"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -77,7 +77,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Import Current Month InventoryInfo from view"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -94,7 +94,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Import Current Month SalesInfo from view"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -2108,7 +2108,7 @@ where nvl(on_hand_count,0) &lt;&gt; 0</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Customer]</property>
+                  name="OpenRowset">[dbo].[Customers]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -31426,7 +31426,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
           Id="Package\Import Current Month SalesInfo from view"
           TopLeft="112,260" />
         <NodeLayout
-          Size="167,42"
+          Size="151,42"
           Id="Package\Import Masters"
           TopLeft="315,147" />
         <NodeLayout
@@ -31443,9 +31443,9 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="74.8333333333334,73"
+              EndConnector="66.8333333333334,73"
               Start="0,0"
-              End="74.8333333333334,65.5">
+              End="66.8333333333334,65.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -31456,13 +31456,13 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
                     Point2="0,29.671601615074"
                     Point3="4,29.671601615074" />
                   <mssgle:LineSegment
-                    End="70.8333333333334,29.671601615074" />
+                    End="62.8333333333334,29.671601615074" />
                   <mssgle:CubicBezierSegment
-                    Point1="70.8333333333334,29.671601615074"
-                    Point2="74.8333333333334,29.671601615074"
-                    Point3="74.8333333333334,33.671601615074" />
+                    Point1="62.8333333333334,29.671601615074"
+                    Point2="66.8333333333334,29.671601615074"
+                    Point3="66.8333333333334,33.671601615074" />
                   <mssgle:LineSegment
-                    End="74.8333333333334,65.5" />
+                    End="66.8333333333334,65.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -31529,30 +31529,30 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="372,189">
+          TopLeft="366.666666666667,189">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-151.333333333333,71"
+              EndConnector="-146,71"
               Start="0,0"
-              End="-151.333333333333,63.5">
+              End="-146,63.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.4949679294093" />
+                    End="0,31.5389086781227" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,31.4949679294093"
-                    Point2="0,35.4949679294093"
-                    Point3="-4,35.4949679294093" />
+                    Point1="0,31.5389086781227"
+                    Point2="0,35.5389086781227"
+                    Point3="-4,35.5389086781227" />
                   <mssgle:LineSegment
-                    End="-147.333333333333,35.4949679294093" />
+                    End="-142,35.5389086781227" />
                   <mssgle:CubicBezierSegment
-                    Point1="-147.333333333333,35.4949679294093"
-                    Point2="-151.333333333333,35.4949679294093"
-                    Point3="-151.333333333333,39.4949679294093" />
+                    Point1="-142,35.5389086781227"
+                    Point2="-146,35.5389086781227"
+                    Point3="-146,39.5389086781227" />
                   <mssgle:LineSegment
-                    End="-151.333333333333,63.5" />
+                    End="-146,63.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -31585,18 +31585,30 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="425.666666666667,189">
+          TopLeft="414.333333333333,189">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,69"
+              EndConnector="12,69"
               Start="0,0"
-              End="0,61.5">
+              End="12,61.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,61.5" />
+                    End="0,30.5474788791621" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.5474788791621"
+                    Point2="0,34.5474788791621"
+                    Point3="4,34.5474788791621" />
+                  <mssgle:LineSegment
+                    End="8,34.5474788791621" />
+                  <mssgle:CubicBezierSegment
+                    Point1="8,34.5474788791621"
+                    Point2="12,34.5474788791621"
+                    Point3="12,38.5474788791621" />
+                  <mssgle:LineSegment
+                    End="12,61.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -31646,7 +31658,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
     design-time-name="Package\Import Masters">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152,42"
           Id="Package\Import Masters\Season Masters"
@@ -31754,9 +31766,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31778,9 +31788,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31802,9 +31810,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31826,9 +31832,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31850,9 +31854,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31874,9 +31876,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31898,9 +31898,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31922,9 +31920,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31946,9 +31942,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31970,9 +31964,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31994,9 +31986,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -32162,7 +32152,7 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
     design-time-name="Package\Import Transactions">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="150,42"
           Id="Package\Import Transactions\Transaction_lines"
@@ -32206,7 +32196,9 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32228,7 +32220,9 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32250,7 +32244,9 @@ WHERE TRANDATE &gt;= to_date('20190101','yyyymmdd')
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
