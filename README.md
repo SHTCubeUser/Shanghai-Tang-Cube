@@ -1,2 +1,2 @@
 # Integration
-Data extraction process
+This is the table schema
