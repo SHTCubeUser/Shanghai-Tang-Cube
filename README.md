@@ -1,2 +1,2 @@
 # Shanghai-Tang-Cube
-This is the data extraction process which will extract data from NetSuite to SQL Server database named is21olap
+This is the data extraction process which will Extract Transform and Load data from NetSuite database to SQL Server with the name is21olap
